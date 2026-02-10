@@ -3,14 +3,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Enquête Fibre Raynal</title>
+  <script src="./no_fibre/resources/ol.js"></script>
+  <title>Enquête No Fibre</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-100 text-gray-800 font-sans">
 
   <header class="bg-white shadow">
     <div class="max-w-5xl mx-auto px-4 py-6 flex items-center justify-between">
-      <h1 class="text-2xl font-bold text-green-600">Bienvenue sur Enquête Fibre Raynal</h1>
+    <h1 class="text-2xl font-bold text-green-600">Bienvenue sur Enquête Fibre Raynal</h1>
     </div>
   </header>
 
@@ -22,6 +23,18 @@
       <h2 class="text-xl font-semibold mb-2">Carte de l'arcep</h2>
       <img src="20250526-carte-arcep.png" alt="Illustration du projet" class="rounded-lg shadow-md w-full max-w-md mx-auto" />
     </section>
+
+    <iframe
+          src="no_fibre/index.html"
+          width="100%" height="100%"
+          frameborder="0" marginheight="0" marginwidth="0">Chargement…
+    </iframe>
+    <div id="map">
+            <div id="popup" class="ol-popup">
+                <a href="#" id="popup-closer" class="ol-popup-closer"></a>
+                <div id="popup-content"></div>
+            </div>
+        </div>
     
     <!-- Descriptif -->
     <section class="mb-8">
